@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diamond</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: radial-gradient(circle, #fbc2eb, #a6c1ee);
+    }
+    .diamond {
+      width: 150px;
+      height: 150px;
+      background: teal;
+      transform: rotate(45deg);
+      border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s, background 0.3s;
+    }
+    .diamond:hover {
+      transform: rotate(45deg) scale(1.1);
+      background: #008080;
+    }
+  </style>
+</head>
+<body>
+  <div class="diamond"></div>
+</body>
+</html>
