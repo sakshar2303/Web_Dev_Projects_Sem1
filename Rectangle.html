@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rectangle</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    }
+    .rectangle {
+      width: 300px;
+      height: 150px;
+      background: #2ecc71;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .rectangle:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="rectangle"></div>
+</body>
+</html>
