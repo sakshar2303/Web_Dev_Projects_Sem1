@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #444;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .box {
+      overflow: hidden;
+      border-radius: 15px;
+    }
+    .box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease, box-shadow 0.3s;
+      border-radius: 15px;
+    }
+    .box img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <h2> 🐶 Dog Gallery </h2>
+  <div class="container">
+    <div class="box"><img src="https://media.istockphoto.com/id/1491230306/photo/happy-dog.jpg" alt="Dog"></div>
+    <div class="box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeunQ1o3ujLOcWS7EIjGAkAttgkQtDKyQEbQ&s" alt="Dog"></div>
+    <div class="box"><img src="https://cdn.britannica.com/16/234216-050-C66F8665/beagle-hound-dog.jpg" alt="Dog"></div>
+    <div class="box"><img src="https://images.squarespace-cdn.com/content/v1/54822a56e4b0b30bd821480c/45ed8ecf-0bb2-4e34-8fcf-624db47c43c8/Golden+Retrievers+dans+pet+care.jpeg" alt="Dog"></div>
+    <div class="box"><img src="https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg" alt="Dog"></div>
+    <div class="box"><img src="https://d2zp5xs5cp8zlg.cloudfront.net/image-68121-800.jpg" alt="Dog"></div>
+    <div class="box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSv2c3dfARg8v7gLv6X_-g8fBJLmtK2udNlzQ&s" alt="Dog"></div>
+    <div class="box"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR28FL07DOPQ0gnDt8NjV5AT3o09OsWo5fh-g&s" alt="Dog"></div>
+    <div class="box"><img src="https://pethelpful.com/.image/w_3840,q_auto:good,c_limit/NDowMDAwMDAwMDAwMDk3NjEy/french-bulldog-running.jpg" alt="Dog"></div>
+  </div>
+</body>
+</html>
